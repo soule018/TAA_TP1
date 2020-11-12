@@ -1,0 +1,12 @@
+jpa/Kanban.class
+dao/generic/IGenericDao.class
+jpa/Section.class
+dao/generic/AbstractJpaDao.class
+jpa/Fiche.class
+dao/generic/UserDao.class
+jpa/EntityManagerHelper.class
+dao/generic/KanbanDao.class
+dao/generic/FicheDao.class
+jpa/JpaTest.class
+fr/istic/taa/jaxrs/dao/generic/EntityManagerHelper.class
+jpa/User.class
