@@ -41,6 +41,10 @@ public class Fiche implements Serializable {
         this.noteExplicative = noteExplicative;
     }
 
+    public Fiche(String libelle) {
+        this.libelle = libelle;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getId() {

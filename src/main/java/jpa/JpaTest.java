@@ -23,14 +23,15 @@ public class JpaTest {
 		FicheDao ficheDao = new FicheDao();
 		SectionDao sectionDao = new SectionDao();
 		Section section = new Section();
-		Fiche fiche = new Fiche("football","2mois","uuuu","aboisso","log.com","voir avec directeur");
+		//Fiche fiche = new Fiche("football","2mois","uuuu","aboisso","log.com","voir avec directeur");
 
 
 		try {
 			userDao.createUser("diallo");
 
 			kanbanDao.createKanban("titi");
-			ficheDao.createFiche(fiche);
+			ficheDao.createFiche("football","2mois","uuuu","aboisso","log.com","voir avec directeur");
+			ficheDao.createFiche("tennis","3mois","ttt","abidjan","barça.com","voir avec directeur");
 			//userDao.addFiche(fiche);
 			sectionDao.createSection(section);
 		} catch (Exception e) {

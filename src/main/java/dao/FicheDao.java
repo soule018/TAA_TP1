@@ -9,8 +9,10 @@ public class FicheDao extends AbstractJpaDao<Long, Fiche> {
         super(Fiche.class);
     }
 
-    public void createFiche(Fiche fiche){
+    public Fiche createFiche(String libelle,String temps, String tags, String lieu, String url, String noteExplicative) {
+        Fiche fiche = new Fiche(libelle);
         this.save(fiche);
+        return fiche;
     }
 
     /*public void createFiche(String libelle,){
